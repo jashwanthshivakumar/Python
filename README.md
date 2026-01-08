@@ -1,91 +1,94 @@
-1. Even or Odd Checker Program
-File
-Intergerinput.py
+# Simple Python Practice Programs
 
-Description
+This repository contains two Python programs:
+
+1. An even or odd number checker that determines whether a user-entered integer is even or odd.
+2. A program that calculates the sum of integers from 1 to 50 using a `for` loop.
+
+---
+
+## 1. Even or Odd Checker Program
+
+### File
+
+`Intergerinput.py`
+
+### Description
+
 This program:
 
-Prompts the user to enter an integer.
+* Prompts the user to enter an **integer**.
+* Determines whether the entered number is **even or odd**.
+* Displays the result using a clear and descriptive message.
 
-Uses if-else statement to check whether the number is even or odd
+### How It Works
 
-Displays the result with clear messaging
+1. The program uses `input()` to read a number from the user.
+2. The input is converted to an integer using `int()`.
+3. The program uses the modulo operator `%` to check divisibility by 2:
 
-How It Works
-The program uses input() to read a number from the user
+   * If `number % 2 == 0`, the number is even.
+   * Otherwise, the number is odd.
+4. The result is printed in sentence form.
 
-Converts the input to int using int()
+### Example Interaction
 
-Uses the modulo operator % to check if the number is divisible by 2:
-
-If number % 2 == 0: prints "even"
-
-Else: prints "odd"
-
-Displays result like: 7 is an odd number.
-
-Example Interaction
-text
+```text
 Enter an integer: 7
 7 is an odd number.
+```
 
+```text
 Enter an integer: 10
 10 is an even number.
-2. Sum of Numbers Program
-File
-for_loop_addition.py (or sum_1_to_50.py)
+```
 
-Description
+---
+
+## 2. Sum of Numbers Program
+
+### File
+
+`for_loop_addition.py`
+
+### Description
+
 This program:
 
-Uses a for loop to iterate over numbers from 1 to 50
+* Uses a `for` loop to iterate through numbers from **1 to 50**.
+* Calculates the sum of all integers in this range.
+* Displays the final result.
 
-Calculates the sum of all integers in this range
+### How It Works
 
-Displays the final sum (1275)
+1. A variable named `total_sum` is initialized to 0.
+2. The program uses `for i in range(1, 51)` to loop from 1 to 50.
+3. Each number is added to `total_sum` using the `+=` operator.
+4. After the loop completes, the final sum is printed.
 
-How It Works
-Initializes total_sum = 0
+The expected result is:
 
-Uses for i in range(1, 51): to iterate from 1 to 50
+```
+50 × 51 ÷ 2 = 1275
+```
 
-Accumulates the sum with total_sum += i in each iteration
+### Example Output
 
-Prints the final result using the formula 
-50
-×
-51
-2
-=
-1275
-2
-50×51
- =1275
-
-Example Interaction
-text
+```text
 The sum of integers from 1 to 50 is: 1275
-How to Run the Programs
-Make sure Python is installed on your system.
+```
 
-Intergerinput.py
+---
 
-for_loop_addition.py
+## Learning Objectives
 
-Open a terminal or command prompt in the directory where the files are saved.
+These programs demonstrate the following Python concepts:
 
-Run each program with:
+* User input using `input()`
+* Data type conversion with `int()`
+* Conditional statements (`if-else`)
+* For loops with `range()`
+* Modulo operator (`%`) for even and odd checking
+* Accumulating values using the `+=` operator
 
-bash
-python Intergerinput.py
-python for_loop_addition.py
-Learning Objectives
-User input with input() and type conversion
-
-Conditional statements (if-else)
-
-For loops with range()
-
-Modulo operator (%) for even/odd checking
-
-Variable accumulation pattern with +=
+---
