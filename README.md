@@ -1,99 +1,91 @@
-# Python
+1. Even or Odd Checker Program
+File
+Intergerinput.py
 
-Here is a sample `README.md` you can use:
-
-```markdown
-# Simple Python Practice Programs
-
-This repository contains two beginner-friendly Python programs:
-
-1. A basic calculator that performs arithmetic operations on two numbers.
-2. A name-based greeting program that reads the user's first and last name and prints a personalized message.
-
----
-
-## 1. Basic Calculator Program
-
-### File
-`Calculator.py` (example name)
-
-### Description
+Description
 This program:
 
-- Prompts the user to enter **two numbers**.
-- Performs the following basic arithmetic operations on the numbers:
-  - Addition
-  - Subtraction
-  - Multiplication
-  - Division (with a check to avoid division by zero)
-- Displays the result of each operation on the screen.
+Prompts the user to enter an integer.
 
-### How It Works
-1. The program uses `input()` to read two values from the user.
-2. The inputs are converted to `float` so decimal values are allowed.
-3. It calculates:
-   - `addition = num1 + num2`
-   - `subtraction = num1 - num2`
-   - `multiplication = num1 * num2`
-   - `division = num1 / num2` (only if the second number is not zero)
-4. The results are printed with clear labels for each operation.
+Uses if-else statement to check whether the number is even or odd
 
-### Example Interaction
-```text
-Enter the first number: 10
-Enter the second number: 5
+Displays the result with clear messaging
 
-Results:
-Addition:  15.0
-Subtraction:  5.0
-Multiplication:  50.0
-Division:  2.0
-```
+How It Works
+The program uses input() to read a number from the user
 
-If the second number is `0`, the program will print a message like:
-```text
-Division:  Undefined (cannot divide by zero)
-```
+Converts the input to int using int()
 
----
+Uses the modulo operator % to check if the number is divisible by 2:
 
-## 2. Name Greeting Program
+If number % 2 == 0: prints "even"
 
-### File
-`Welcome message.py` (example name)
+Else: prints "odd"
 
-### Description
+Displays result like: 7 is an odd number.
+
+Example Interaction
+text
+Enter an integer: 7
+7 is an odd number.
+
+Enter an integer: 10
+10 is an even number.
+2. Sum of Numbers Program
+File
+for_loop_addition.py (or sum_1_to_50.py)
+
+Description
 This program:
 
-- Prompts the user to enter their **first name** and **last name**.
-- Concatenates the first and last name to form the **full name**.
-- Prints a **personalized greeting** using the full name.
+Uses a for loop to iterate over numbers from 1 to 50
 
-### How It Works
-1. The program uses `input()` to ask for the first name and last name separately.
-2. It concatenates them with a space in between:
-   - `full_name = first_name + " " + last_name`
-3. It prints a greeting message in the following format:
-   - `hello john deer, welcome to python programe`
-4. The program converts the full name to lowercase before printing to match the expected sample output.
+Calculates the sum of all integers in this range
 
-### Example Interaction
-```text
-Enter your first name: John
-Enter your last name: Deer
-hello john deer, welcome to python programe
-```
+Displays the final sum (1275)
 
----
+How It Works
+Initializes total_sum = 0
 
-## How to Run the Programs
+Uses for i in range(1, 51): to iterate from 1 to 50
 
-1. Make sure Python is installed on your system.
-2. Save each program in its own `.py` file, for example:
-   - `calculator.py`
-   - `greeting.py`
-3. Open a terminal or command prompt in the directory where the files are saved.
-4. Run each program with:
-   - `python Calculator.py`
-   - `python Welcome message.py`
-```
+Accumulates the sum with total_sum += i in each iteration
+
+Prints the final result using the formula 
+50
+×
+51
+2
+=
+1275
+2
+50×51
+ =1275
+
+Example Interaction
+text
+The sum of integers from 1 to 50 is: 1275
+How to Run the Programs
+Make sure Python is installed on your system.
+
+Intergerinput.py
+
+for_loop_addition.py
+
+Open a terminal or command prompt in the directory where the files are saved.
+
+Run each program with:
+
+bash
+python Intergerinput.py
+python for_loop_addition.py
+Learning Objectives
+User input with input() and type conversion
+
+Conditional statements (if-else)
+
+For loops with range()
+
+Modulo operator (%) for even/odd checking
+
+Variable accumulation pattern with +=
