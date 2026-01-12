@@ -1,99 +1,94 @@
-# Python
-
-Here is a sample `README.md` you can use:
-
-```markdown
 # Simple Python Practice Programs
 
-This repository contains two beginner-friendly Python programs:
+This repository contains two Python programs:
 
-1. A basic calculator that performs arithmetic operations on two numbers.
-2. A name-based greeting program that reads the user's first and last name and prints a personalized message.
+1. An even or odd number checker that determines whether a user-entered integer is even or odd.
+2. A program that calculates the sum of integers from 1 to 50 using a `for` loop.
 
 ---
 
-## 1. Basic Calculator Program
+## 1. Even or Odd Checker Program
 
 ### File
-`Calculator.py` (example name)
+
+`Intergerinput.py`
 
 ### Description
+
 This program:
 
-- Prompts the user to enter **two numbers**.
-- Performs the following basic arithmetic operations on the numbers:
-  - Addition
-  - Subtraction
-  - Multiplication
-  - Division (with a check to avoid division by zero)
-- Displays the result of each operation on the screen.
+* Prompts the user to enter an **integer**.
+* Determines whether the entered number is **even or odd**.
+* Displays the result using a clear and descriptive message.
 
 ### How It Works
-1. The program uses `input()` to read two values from the user.
-2. The inputs are converted to `float` so decimal values are allowed.
-3. It calculates:
-   - `addition = num1 + num2`
-   - `subtraction = num1 - num2`
-   - `multiplication = num1 * num2`
-   - `division = num1 / num2` (only if the second number is not zero)
-4. The results are printed with clear labels for each operation.
+
+1. The program uses `input()` to read a number from the user.
+2. The input is converted to an integer using `int()`.
+3. The program uses the modulo operator `%` to check divisibility by 2:
+
+   * If `number % 2 == 0`, the number is even.
+   * Otherwise, the number is odd.
+4. The result is printed in sentence form.
 
 ### Example Interaction
-```text
-Enter the first number: 10
-Enter the second number: 5
 
-Results:
-Addition:  15.0
-Subtraction:  5.0
-Multiplication:  50.0
-Division:  2.0
+```text
+Enter an integer: 7
+7 is an odd number.
 ```
 
-If the second number is `0`, the program will print a message like:
 ```text
-Division:  Undefined (cannot divide by zero)
+Enter an integer: 10
+10 is an even number.
 ```
 
 ---
 
-## 2. Name Greeting Program
+## 2. Sum of Numbers Program
 
 ### File
-`Welcome message.py` (example name)
+
+`for_loop_addition.py`
 
 ### Description
+
 This program:
 
-- Prompts the user to enter their **first name** and **last name**.
-- Concatenates the first and last name to form the **full name**.
-- Prints a **personalized greeting** using the full name.
+* Uses a `for` loop to iterate through numbers from **1 to 50**.
+* Calculates the sum of all integers in this range.
+* Displays the final result.
 
 ### How It Works
-1. The program uses `input()` to ask for the first name and last name separately.
-2. It concatenates them with a space in between:
-   - `full_name = first_name + " " + last_name`
-3. It prints a greeting message in the following format:
-   - `hello john deer, welcome to python programe`
-4. The program converts the full name to lowercase before printing to match the expected sample output.
 
-### Example Interaction
+1. A variable named `total_sum` is initialized to 0.
+2. The program uses `for i in range(1, 51)` to loop from 1 to 50.
+3. Each number is added to `total_sum` using the `+=` operator.
+4. After the loop completes, the final sum is printed.
+
+The expected result is:
+
+```
+50 × 51 ÷ 2 = 1275
+```
+
+### Example Output
+
 ```text
-Enter your first name: John
-Enter your last name: Deer
-hello john deer, welcome to python programe
+The sum of integers from 1 to 50 is: 1275
 ```
 
 ---
 
-## How to Run the Programs
+## Learning Objectives
 
-1. Make sure Python is installed on your system.
-2. Save each program in its own `.py` file, for example:
-   - `calculator.py`
-   - `greeting.py`
-3. Open a terminal or command prompt in the directory where the files are saved.
-4. Run each program with:
-   - `python Calculator.py`
-   - `python Welcome message.py`
-```
+These programs demonstrate the following Python concepts:
+
+* User input using `input()`
+* Data type conversion with `int()`
+* Conditional statements (`if-else`)
+* For loops with `range()`
+* Modulo operator (`%`) for even and odd checking
+* Accumulating values using the `+=` operator
+
+---
